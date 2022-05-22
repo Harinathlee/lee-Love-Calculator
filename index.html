@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link type="image/png" sizes="32x32" rel="icon" href="images/icons8-love-32.png">
+  <title>Love Calculator - FLAMES</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=DM+Serif+Display&family=Dancing+Script&family=Kalam:wght@300&family=Pacifico&family=Permanent+Marker&family=Playball&family=Sacramento&family=Updock&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--  fontawesome icons link-->
+  <script src="https://kit.fontawesome.com/176b862828.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $('#myModal').modal('show');
+    });
+  </script>
+</head>
+
+<body style="background-color:#15133C">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-weight: 600;color: #F73D93;">About This Website</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <p aria-hidden="true"><i class="fa-solid fa-xmark"></i></p>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>This is a fun website where you can calculate the relationship between you and your partner by using a old childhood game called FLAMES.</h6>
+        </div>
+        <div class="modal-footer">
+          <p>Note: This is just a fun game.Don't Take it seroius.</p>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Enter Game</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img src="images/randomelove.gif" alt="" style="position:absolute; left: 5px;">
+  <div class="container" id="nameForm">
+    <p class="title">Love Calculator</p>
+    <form>
+      <input type="text" class="Names" id="name1" placeholder="Enter the Your name" required>
+      <h3>Flames</h3>
+      <input type="text" class="Names" id="name2" placeholder="Enter your Partner's names" required>
+      <button type="button" class="btn btn-danger" onclick="calculateRelation()">Calculate</button>
+      <button type="button" class="btn btn-danger" onclick="clearData()">Clear</button>
+    </form>
+  </div>
+  <img src="images/randomelove.gif" alt="" style="position:absolute;top: 120px; right: 5px;">
+
+  <div class="container" id="result" style="visibility:hidden;">
+
+  </div>
+  <img src="images/randomelove.gif" alt="" style="position:absolute;top: 420px; left: 30px;">
+  <img src="images/randomelove.gif" alt="" style="position:absolute;top: 520px; right: 5px;">
+
+
+  <p class="copyright">© 2022 @harinathlee</p>
+
+</body>
+
+</html>

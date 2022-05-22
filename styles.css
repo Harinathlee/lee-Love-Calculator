@@ -1,0 +1,93 @@
+body {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 40px;
+  color: #F73D93;
+}
+
+#nameForm {
+  padding: 2rem;
+  background-color: #FFD9C0;
+  border-radius: 2rem;
+  max-width: 35rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #fff inset,
+    -1px -1px 2px #fff inset;
+  margin-bottom: 15px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type=text]:focus {
+  background-color: #9ADCFF;
+}
+
+.btn {
+  margin: 5px 15px;
+}
+
+.shadow {
+  -webkit-border-radius: 0 0 100% 100% / 0 0 8px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, .30) 0 2px 3px;
+}
+
+#result {
+  background-color: #FAF5E4;
+  font-family: 'Ubuntu';
+  border-radius: 2rem;
+  max-width: 35rem;
+  padding: 15px 10px;
+  border: 1px solid #FAF5E4;
+  box-shadow: 1px 1px 2px #fff inset,
+    -1px -1px 2px #fff inset;
+}
+
+img {
+  width: 20%;
+}
+
+span {
+  font-weight: 600;
+  color: #F73D93;
+}
+
+.relation_logo {
+  width: 40%;
+}
+
+.bottom-container {
+
+}
+.copyright {
+  color: #EAF6F6;border:none;background:none;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+.close{
+  border:none;
+  background:none;
+}
+
+.fa-solid{
+  color: red;
+  size: 50px;
+}
+.modal-content{
+     border-radius: 2rem;
+}
